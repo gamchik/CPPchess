@@ -2,14 +2,50 @@
 
 #include <iostream>
 
-Pawn::Pawn() { std::cout << "I am a Pawn" << std::endl; };
+Pawn::Pawn(){
+    // std::cout << "I am a Pawn" << std::endl;
+};
 
 void Pawn::Move() { std::cout << "Pawn is moving" << std::endl; };
 
 void Pawn::getPieceType() { std::cout << " P "; }
 
-Rook::Rook() { std::cout << "I am a Rook" << std::endl; };
+Rook::Rook(){
+    // std::cout << "I am a Rook" << std::endl;
+};
 
 void Rook::Move() { std::cout << "Rook is moving" << std::endl; };
 
 void Rook::getPieceType() { std::cout << " R "; }
+
+Bishop::Bishop(){
+    // std::cout << "I am a Bishop" << std::endl;
+};
+
+void Bishop::Move() { std::cout << "Bishop is moving" << std::endl; };
+
+void Bishop::getPieceType() { std::cout << " B "; }
+
+Knight::Knight(){
+    // std::cout << "I am a Knight" << std::endl;
+};
+
+void Knight::Move() { std::cout << "Knight is moving" << std::endl; };
+
+void Knight::getPieceType() { std::cout << " Kt"; }
+
+King::King(){
+    // std::cout << "I am a King" << std::endl;
+};
+
+void King::Move() { std::cout << "King is moving" << std::endl; };
+
+void King::getPieceType() { std::cout << " K "; }
+
+Queen::Queen(){
+    // std::cout << "I am a Queen" << std::endl;
+};
+
+void Queen::Move() { std::cout << "Queen is moving" << std::endl; };
+
+void Queen::getPieceType() { std::cout << " Q "; }

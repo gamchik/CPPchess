@@ -6,4 +6,5 @@ class Board {
   std::array<std::array<Square, 8>, 8> board = {nullptr};
   Board();
   void displayBoard();
+  void populateBoard();
 };
