@@ -1,8 +1,9 @@
 #include <iostream>
 
-int main(){
-
-std::cout << "Hello world";
-
-return 0;
+#include "Board.h"
+int main() {
+  std::cout << "Hello world" << std::endl;
+  Board b;
+  b.displayBoard();
+  return 0;
 }
