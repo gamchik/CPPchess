@@ -7,7 +7,6 @@ class Piece {
 };
 
 class Pawn : public Piece {
-
  public:
   Pawn();
   void Move();
@@ -18,5 +17,5 @@ class Rook : public Piece {
  public:
   Rook();
   void Move();
-  void getPieceType(); 
+  void getPieceType();
 };
