@@ -1,7 +1,9 @@
 class Piece {
  protected:
  public:
-  bool color = true;
+  bool color = false;
+  int x = 0;
+  int y = 0;
   virtual void Move() = 0;
   virtual void getPieceType() = 0;
 };

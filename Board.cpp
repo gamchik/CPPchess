@@ -1,7 +1,14 @@
 #include "Board.h"
 
 #include <iostream>
-Board::Board() {}
+Board::Board() {
+  for (int i = 8; i > 0; i--) {
+    for (int j = 8; j > 0; j--) {
+      board[i][j].x = i;
+      board[i][j].y = j;
+    }
+  }
+}
 
 void Board::displayBoard() {
   int i = 8;
@@ -25,7 +32,8 @@ void Board::displayBoard() {
 }
 
 void Board::populateBoard() {
-  board[0][0].piece = new Rook();
+  // board[0][0].piece = new Rook();
+
   board[0][7].piece = new Rook();
   board[7][7].piece = new Rook();
   board[7][0].piece = new Rook();
@@ -51,4 +59,5 @@ void Board::populateBoard() {
   for (auto& x : board[6]) {
     x.piece = new Pawn();
   }
+  std::cout << board[1][7];
 }
