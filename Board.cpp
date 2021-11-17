@@ -22,7 +22,7 @@ void Board::displayBoard() {
         std::cout << "|   ";
       } else {
         std::cout << "|";
-        y.piece->getPieceType();
+        std::cout << *(y.piece);
       }
     }
     std::cout << "| " << i--;
@@ -32,8 +32,7 @@ void Board::displayBoard() {
 }
 
 void Board::populateBoard() {
-  // board[0][0].piece = new Rook();
-
+  board[0][0].piece = new Rook();
   board[0][7].piece = new Rook();
   board[7][7].piece = new Rook();
   board[7][0].piece = new Rook();

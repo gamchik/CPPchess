@@ -16,7 +16,7 @@ int main() {
   b.populateBoard();
   std::cout << "\n\n\n";
   b.displayBoard();
-  move_piece(b, 1, 1, 2, 2);
+ // move_piece(b, 1, 1, 2, 2);
 
   b.displayBoard();
 
