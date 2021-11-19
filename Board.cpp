@@ -2,11 +2,15 @@
 
 #include <iostream>
 Board::Board() {
-  for (int i = 8; i > 0; i--) {
-    for (int j = 8; j > 0; j--) {
-      board[i][j].x = i;
-      board[i][j].y = j;
+	int x_counter = 1; 
+	int y_counter = 8; 
+  for (int i = 0; i < 8; i++) {
+    for (int j = 0; j < 8; j++) {
+      board[i][j].x = x_counter++;
+      board[i][j].y = y_counter;
     }
+    x_counter=1;
+    y_counter--;
   }
 }
 
@@ -29,7 +33,8 @@ void Board::displayBoard() {
     std::cout << "\n";
     std::cout << "---------------------------------" << std::endl;
   }
-}
+  
+  }
 
 void Board::populateBoard() {
   board[0][0].piece = new Rook();

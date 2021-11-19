@@ -2,10 +2,10 @@
 
 class Piece {
  protected:
- public:
   bool color = false;
   int x = 0;
   int y = 0;
+ public:
   virtual void Move() = 0;
   virtual std::ostream& doprint(std::ostream& os) const = 0;
   friend std::ostream& operator<<(std::ostream& os, const Piece& p) {
@@ -26,7 +26,6 @@ class Rook : public Piece {
  public:
   Rook();
   void Move();
-
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "R ";
   }

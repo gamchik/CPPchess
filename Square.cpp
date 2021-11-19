@@ -2,6 +2,6 @@
 
 #include <iostream>
 std::ostream& operator<<(std::ostream& os, const Square& S) {
-  os << "Squares Coordinates (" << S.x << "," << S.y << ")\n";
+  os << "(" << S.x << "," << S.y << ")";
   return os;
 }
