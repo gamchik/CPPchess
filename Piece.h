@@ -5,6 +5,7 @@ class Piece {
   bool color = false;
   int x = 0;
   int y = 0;
+
  public:
   virtual void Move() = 0;
   virtual std::ostream& doprint(std::ostream& os) const = 0;
@@ -15,7 +16,7 @@ class Piece {
 
 class Pawn : public Piece {
  public:
-  Pawn();
+  Pawn(bool color);
   void Move();
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "P ";
@@ -24,7 +25,7 @@ class Pawn : public Piece {
 
 class Rook : public Piece {
  public:
-  Rook();
+  Rook(bool color);
   void Move();
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "R ";
@@ -33,7 +34,7 @@ class Rook : public Piece {
 
 class Bishop : public Piece {
  public:
-  Bishop();
+  Bishop(bool color);
   void Move();
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "B ";
@@ -42,7 +43,7 @@ class Bishop : public Piece {
 
 class Knight : public Piece {
  public:
-  Knight();
+  Knight(bool color);
   void Move();
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "Kt";
@@ -51,7 +52,7 @@ class Knight : public Piece {
 
 class King : public Piece {
  public:
-  King();
+  King(bool color);
   void Move();
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "K ";
@@ -60,7 +61,7 @@ class King : public Piece {
 
 class Queen : public Piece {
  public:
-  Queen();
+  Queen(bool color);
   void Move();
   std::ostream& doprint(std::ostream& os) const {
     return os << this->color << "Q ";
